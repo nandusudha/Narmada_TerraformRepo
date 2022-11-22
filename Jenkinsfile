@@ -1,11 +1,14 @@
 pipeline {
     agent any
     environment {
-        VARFILE = "config/${}.tfvars"
+        VARFILE = "config/${params.ENV}.tfvars"
+        AWS_ACCESS_KEY_ID = "${params.ACCESS_KEY}"
+        AWS_SECRET_ACCESS_KEY_ID ="${params.SECRET_KEY}"
+
     }
     stages {
         stage('init'){
-            steps {
+            steps { 
                 sh "terraform init"
             }
         }
