@@ -1,0 +1,7 @@
+ami="ami-0f5e8a042c8bfcd5e"
+secret_key = "R0njwecKBLS6vKFhG4IYiXFj1MSDLFOuOKq36nxK"
+access_key = "AKIAUPTCMVE5RO5TSCOB"
+Name = "AWSWorld"
+region = "us-west-1"
+instancetype = "t2.micro"
+key_name = "JenkinMasterkey"
