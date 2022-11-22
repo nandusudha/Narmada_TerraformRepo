@@ -3,7 +3,7 @@ pipeline {
     environment {
         VARFILE = "config/${params.ENV}.tfvars"
         AWS_ACCESS_KEY_ID = "${params.ACCESS_KEY}"
-        AWS_SECRET_ACCESS_KEY_ID ="${params.SECRET_KEY}"
+        AWS_SECRET_ACCESS_KEY ="${params.SECRET_KEY}"
 
     }
     stages {
