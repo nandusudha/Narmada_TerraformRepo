@@ -9,7 +9,7 @@ pipeline {
     stages {
         stage('init'){
             steps { 
-                sh "terraform init"
+                sh "terraform init -backend-config config/${params.ENV}-backend.tfvars"
             }
         }
         stage('validate'){

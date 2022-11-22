@@ -16,10 +16,8 @@ provider "aws" {
 
 terraform {
   backend "s3" {
-    bucket = "value"
-    key=""
     region = "us-west-1"
-  }
+  }   
 }
 
     
