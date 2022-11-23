@@ -12,11 +12,11 @@ pipeline {
                 sh "terraform init -backend-config config/${params.ENV}-backend.tfvars"
             }
         }
-        stage('validate'){
+       /*  stage('validate'){
             steps {
                 sh "terraform validate"
             }
-        }
+        } */
    
         stage('plan'){
             steps {
